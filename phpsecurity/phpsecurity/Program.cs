@@ -18,8 +18,9 @@ namespace phpsecurity
 				string HtmlResult = wc.UploadString (URI, myParameters);
 				bool success = HtmlResult.Contains ("welcome");
 				bool ohno = HtmlResult.Contains ("gtfo");
-				if (success)
+				if (success){
 					Console.WriteLine ("Welcome");
+				}
 				if (ohno) {
 					Console.WriteLine ("you are not allowed");
 				
