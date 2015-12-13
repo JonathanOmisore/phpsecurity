@@ -16,7 +16,7 @@ namespace phpsecurity
 			using (WebClient wc = new WebClient()) {
 				wc.Headers [HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
 				string HtmlResult = wc.UploadString (URI, myParameters);
-				bool success = HtmlResult.Contains ("welcome jonathan");
+				bool success = HtmlResult.Contains ("welcome");
 				bool ohno = HtmlResult.Contains ("gtfo");
 				if (success)
 					Console.WriteLine ("Welcome");
